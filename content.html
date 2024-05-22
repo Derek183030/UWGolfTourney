@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for the University of Washington Golf Tournament</title>
+    <meta name="description" content="Register for the University of Washington Golf Tournament and secure your spot for a day of fun and competition at the Washington National Golf Club.">
+    <meta name="keywords" content="University of Washington, Golf Tournament, Registration, Washington National Golf Club, Golf, UW, Alumni">
+    <meta name="author" content="University of Washington">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4b2e83;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        main {
+            padding: 30px;
+            background: white;
+            margin-top: 30px;
+        }
+        footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            background: #e9e9e9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="date"],
+        form input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #c3942a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Register for the University of Washington Golf Tournament</h1>
+        <p>Secure your spot for a day of fun and competition!</p>
+    </div>
+</header>
+
+<main id="main" class="container">
+    <h2>Registration Form</h2>
+    <form action="submit_registration.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="handicap">Golf Handicap:</label>
+        <input type="text" id="handicap" name="handicap" required>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2024 University of Washington. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
